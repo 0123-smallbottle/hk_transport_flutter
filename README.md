@@ -1,16 +1,7 @@
 # hk_transport_flutter
 
-A new Flutter project.
+巴士時間表，但是用flutter寫的
 
-## Getting Started
+## 備注
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+第一次寫flutter，可能項目文件和結構不規範，歡迎提issue或者pr
