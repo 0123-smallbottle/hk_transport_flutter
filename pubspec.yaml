@@ -46,6 +46,8 @@ dependencies:
   flutter_map: ^6.0.0
 
   get: ^4.6.6
+  connectivity_plus: ^5.0.0
+  animations: ^2.0.8
 
 
 

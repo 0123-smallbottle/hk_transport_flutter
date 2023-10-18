@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 網絡權限申請 -->
+<uses-permission android:name="android.permission.INTERNET" />
     <application
         android:label="hk_transport_flutter"
         android:name="${applicationName}"
