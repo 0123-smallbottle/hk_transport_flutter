@@ -16,16 +16,16 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          setState(() {routeList;});
-          setState(() {getKmbRouteList();});
+          setState(() {stopList;});
+          setState(() {getKmbStopList();});
         },
         child: const Icon(Icons.refresh),
       ),
       body: ListView.builder(
-        itemCount: routeList.length,
+        itemCount: stopList.length,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(routeList[index]),
+            title: Text(stopList[index]),
           );
         },
       ),
