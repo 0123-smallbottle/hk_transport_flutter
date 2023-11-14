@@ -1,7 +1,7 @@
-# hk_transport_flutter
+# 香港巴士時間表
 
-巴士時間表，但是用flutter寫的
+Material Design風格的無廣告巴士時間表(使用flutter製作)
 
 ## 備注
 
-第一次寫flutter，可能項目文件和結構不規範，歡迎提issue或者pr
+第一次寫flutter，項目文件和結構可能會不規範，歡迎提issue或者pr
