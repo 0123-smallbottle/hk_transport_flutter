@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     getKmbStopList();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,15 +28,17 @@ class _HomePageState extends State<HomePage> {
         },
         child: const Icon(Icons.refresh),
       ),
-      body: ListView.builder(
-        itemCount: kmbStopList['tc']?.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text('名稱: ${kmbStopList['tc']![index]['nameTc']!}'),
-            subtitle: Text(
-                '位置: ${kmbStopList['loclation']![index]['long']} ${kmbStopList['loclation']![index]['lat']}'),
-          );
-        },
+      body: Scrollbar(
+        child: ListView.builder(
+          itemCount: kmbStopList['tc']?.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text('名稱: ${kmbStopList['tc']![index]['nameTc']!}'),
+              subtitle: Text(
+                  '位置: ${kmbStopList['loclation']![index]['long']} ${kmbStopList['loclation']![index]['lat']}'),
+            );
+          },
+        ),
       ),
     );
   }
