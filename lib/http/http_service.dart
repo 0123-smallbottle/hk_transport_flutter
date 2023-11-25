@@ -20,7 +20,7 @@ Map<String, List<Map<String, String>>> kmbRouteList = {
 
   'serviceType': [], // 服務類型(暫時未知道作用)
 };
-void getKmbRouteList() async {
+Future <void> getKmbRouteList() async {
   try {
     // 獲取路綫列表
     Response response = await dio.get(HttpUrl.baseUrl + Api.kmbRouteList);
@@ -151,7 +151,7 @@ Future <void> getKmbStopList() async {
 
 Map<String, List<Map<String, String>>> kmbStopETA = {};
 // 巴士站到站時間
-void getKmbStopETA(String stopId, route, servicetype) async {
+Future <void> getKmbStopETA(String stopId, route, servicetype) async {
   try {
     // 獲取站列表
     Response response =
