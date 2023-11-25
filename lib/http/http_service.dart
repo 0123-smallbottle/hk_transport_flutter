@@ -98,7 +98,7 @@ Map<String, List<Map<String, String>>> kmbStopList = {
   'loclation': [], // 位置
 };
 
-void getKmbStopList() async {
+Future <void> getKmbStopList() async {
   try {
     // 獲取巴士站列表
     Response response = await dio.get(HttpUrl.baseUrl + Api.kmbStopList);
